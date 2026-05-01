@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Check, Package, Quote, Sparkles, Users } from "lucide-react"
+import { Check, Quote, Rocket, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -8,8 +8,8 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { type Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "tests | Fastest Minecraft Server Hosting - Launch in 60 Seconds",
-  description: "Deploy Minecraft servers instantly with DDoS protection, unlimited slots, and mod support. Free trial available.",
+  title: "tests - High-Performance Minecraft Server Hosting",
+  description: "Experience lag-free, powerful, and customizable Minecraft server hosting. Instant setup, full mod support, and 24/7 expert support.",
 }
 
 export default function HomePage() {
@@ -21,10 +21,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl text-center space-y-5">
           
           <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">Ship something people remember.</h1>
-          
+          <p className="mx-auto max-w-2xl text-pretty text-lg text-muted-foreground">Experience unparalleled speed, stability, and control. Host your dream Minecraft world with tests, where lag is a myth and possibilities are endless.</p>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <Button asChild size="lg"><Link href="#">Get started</Link></Button>
-            
+            <Button asChild size="lg"><Link href="/pricing">Start Your Server</Link></Button>
+            <Button asChild size="lg" variant="outline"><Link href="#dashboard-demo">View Demo Dashboard</Link></Button>
           </div>
         </div>
         <div className="relative mx-auto mt-14 max-w-5xl">
@@ -37,20 +37,78 @@ export default function HomePage() {
             </div>
             <div className="grid gap-4 p-6 sm:grid-cols-3">
               <div className="rounded-xl border bg-background p-4">
-                <p className="text-xs uppercase tracking-wide text-muted-foreground">Java, Bedrock, Forge, Fabric, Spigot</p>
-                <p className="mt-2 text-2xl font-semibold tracking-tight">1-Click Setup</p>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground">MRR growth</p>
+                <p className="mt-2 text-2xl font-semibold tracking-tight">+38%</p>
               </div>
               <div className="rounded-xl border bg-background p-4">
-                <p className="text-xs uppercase tracking-wide text-muted-foreground">Enterprise-grade infrastructure</p>
-                <p className="mt-2 text-2xl font-semibold tracking-tight">99.9% Uptime</p>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground">Active teams</p>
+                <p className="mt-2 text-2xl font-semibold tracking-tight">12k</p>
               </div>
               <div className="rounded-xl border bg-background p-4">
-                <p className="text-xs uppercase tracking-wide text-muted-foreground">Transfer your world free</p>
-                <p className="mt-2 text-2xl font-semibold tracking-tight">Free Migration</p>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground">Avg response</p>
+                <p className="mt-2 text-2xl font-semibold tracking-tight">&lt;200ms</p>
               </div>
             </div>
             <div className="border-t px-6 py-4 text-xs text-muted-foreground">Live, customizable, and ready in minutes.</div>
           </div>
+        </div>
+      </div>
+    </section>
+
+<section className="relative w-full ">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <p className="text-center text-sm font-medium uppercase tracking-wider text-muted-foreground">Trusted by teams everywhere</p>
+        <div className="mt-8 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">Forge</div>
+          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">Fabric</div>
+          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">PaperMC</div>
+          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">Spigot</div>
+          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">Bukkit</div>
+          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">CurseForge</div>
+        </div>
+      </div>
+    </section>
+
+<section className="relative w-full ">
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-24 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center space-y-4">
+          
+          <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Built for teams who care about the details</h2>
+          <p className="mx-auto max-w-2xl text-pretty text-muted-foreground">From instant setup to advanced mod support, tests provides everything you need for an epic Minecraft journey.</p>
+        </div>
+        <div className="mt-12 grid gap-4 lg:grid-cols-3">
+          <Card className="lg:col-span-2 relative overflow-hidden border-border/60">
+            <CardHeader>
+              <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"><Rocket className="h-5 w-5" /></div>
+              <CardTitle className="text-xl">Instant Setup</CardTitle>
+              <CardDescription className="text-base">Get your server online in minutes, not hours. Our automated system handles everything.</CardDescription>
+            </CardHeader>
+            
+          </Card>
+          <Card className="lg:col-span-1 relative overflow-hidden border-border/60">
+            <CardHeader>
+              <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"><Sparkles className="h-5 w-5" /></div>
+              <CardTitle className="text-xl">Blazing Fast Performance</CardTitle>
+              <CardDescription className="text-base">Powered by NVMe SSDs and high-end CPUs, ensuring zero lag and smooth gameplay.</CardDescription>
+            </CardHeader>
+            
+          </Card>
+          <Card className="lg:col-span-1 relative overflow-hidden border-border/60">
+            <CardHeader>
+              <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"><Sparkles className="h-5 w-5" /></div>
+              <CardTitle className="text-xl">Full Mod &amp; Plugin Support</CardTitle>
+              <CardDescription className="text-base">Easily install Forge, Fabric, Spigot, Paper, Bukkit, and any modpack you desire.</CardDescription>
+            </CardHeader>
+            
+          </Card>
+          <Card className="lg:col-span-2 relative overflow-hidden border-border/60">
+            <CardHeader>
+              <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"><Sparkles className="h-5 w-5" /></div>
+              <CardTitle className="text-xl">DDoS Protection Included</CardTitle>
+              <CardDescription className="text-base">Stay online and secure with enterprise-grade DDoS mitigation built into every plan.</CardDescription>
+            </CardHeader>
+            
+          </Card>
         </div>
       </div>
     </section>
@@ -61,129 +119,39 @@ export default function HomePage() {
         <dl className="mt-10 grid gap-y-8 sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-border">
           <div className="px-2 text-center sm:px-6">
             <dd className="text-4xl font-semibold tracking-tight sm:text-5xl">10,000+</dd>
-            <dt className="mt-2 text-sm text-muted-foreground">Servers Hosted</dt>
+            <dt className="mt-2 text-sm text-muted-foreground">Active Servers</dt>
           </div>
           <div className="px-2 text-center sm:px-6">
-            <dd className="text-4xl font-semibold tracking-tight sm:text-5xl">99.9%</dd>
-            <dt className="mt-2 text-sm text-muted-foreground">Uptime %</dt>
+            <dd className="text-4xl font-semibold tracking-tight sm:text-5xl">99.99%</dd>
+            <dt className="mt-2 text-sm text-muted-foreground">Uptime Guarantee</dt>
           </div>
           <div className="px-2 text-center sm:px-6">
-            <dd className="text-4xl font-semibold tracking-tight sm:text-5xl">50</dd>
-            <dt className="mt-2 text-sm text-muted-foreground">Global Locations</dt>
+            <dd className="text-4xl font-semibold tracking-tight sm:text-5xl">500TB+</dd>
+            <dt className="mt-2 text-sm text-muted-foreground">Data Transferred Monthly</dt>
           </div>
           <div className="px-2 text-center sm:px-6">
-            <dd className="text-4xl font-semibold tracking-tight sm:text-5xl">24/7</dd>
-            <dt className="mt-2 text-sm text-muted-foreground">Expert Support</dt>
+            <dd className="text-4xl font-semibold tracking-tight sm:text-5xl">100k+</dd>
+            <dt className="mt-2 text-sm text-muted-foreground">Happy Players</dt>
           </div>
         </dl>
       </div>
     </section>
 
 <section className="relative w-full ">
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-24 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center space-y-4">
-          
-          <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Built for teams who care about the details</h2>
-          
-        </div>
-        <div className="mt-12 grid gap-4 lg:grid-cols-3">
-          <Card className="lg:col-span-2 relative overflow-hidden border-border/60">
-            <CardHeader>
-              <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"><Package className="h-5 w-5" /></div>
-              <CardTitle className="text-xl">One-Click Modpacks</CardTitle>
-              <CardDescription className="text-base">Install SkyFactory, FTB, Tekkit, and 100+ packs instantly</CardDescription>
-            </CardHeader>
-            
-          </Card>
-          <Card className="lg:col-span-1 relative overflow-hidden border-border/60">
-            <CardHeader>
-              <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"><Sparkles className="h-5 w-5" /></div>
-              <CardTitle className="text-xl">DDoS Protection</CardTitle>
-              <CardDescription className="text-base">Military-grade shielding keeps your server online</CardDescription>
-            </CardHeader>
-            
-          </Card>
-          <Card className="lg:col-span-1 relative overflow-hidden border-border/60">
-            <CardHeader>
-              <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"><Users className="h-5 w-5" /></div>
-              <CardTitle className="text-xl">Unlimited Players</CardTitle>
-              <CardDescription className="text-base">No slot limits - host massive communities</CardDescription>
-            </CardHeader>
-            
-          </Card>
-          <Card className="lg:col-span-2 relative overflow-hidden border-border/60">
-            <CardHeader>
-              <div className="mb-2 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary"><Sparkles className="h-5 w-5" /></div>
-              <CardTitle className="text-xl">NVMe Storage</CardTitle>
-              <CardDescription className="text-base">Lightning-fast world loading and chunk generation</CardDescription>
-            </CardHeader>
-            
-          </Card>
-        </div>
-      </div>
-    </section>
-
-<section className="relative w-full ">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <p className="text-center text-sm font-medium uppercase tracking-wider text-muted-foreground">Trusted by teams everywhere</p>
-        <div className="mt-8 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-6">
-          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">Hypixel</div>
-          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">Mineplex</div>
-          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">CubeCraft</div>
-          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">Lifeboat</div>
-          <div className="text-base font-semibold tracking-tight text-muted-foreground/70 transition hover:text-foreground">Minehut</div>
-        </div>
-      </div>
-    </section>
-
-<section className="relative w-full ">
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-24 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center space-y-4">
-          
-          <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Loved by people who care about quality</h2>
-          
-        </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <Card className="border-border/60">
-            <CardContent className="p-6">
-              <Quote className="h-6 w-6 text-primary/40" />
-              <p className="mt-4 text-pretty text-base leading-relaxed">"Migrated 5 servers and never looked back. The performance is insane."</p>
-              <div className="mt-6 flex items-center gap-3">
-                <Avatar className="h-9 w-9"><AvatarFallback>AK</AvatarFallback></Avatar>
-                <div>
-                  <p className="text-sm font-semibold">Alex K.</p>
-                  <p className="text-xs text-muted-foreground">Network Owner</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="border-border/60">
-            <CardContent className="p-6">
-              <Quote className="h-6 w-6 text-primary/40" />
-              <p className="mt-4 text-pretty text-base leading-relaxed">"One-click FTB Ultimate setup saved us 3 days of work."</p>
-              <div className="mt-6 flex items-center gap-3">
-                <Avatar className="h-9 w-9"><AvatarFallback>SL</AvatarFallback></Avatar>
-                <div>
-                  <p className="text-sm font-semibold">Sarah L.</p>
-                  <p className="text-xs text-muted-foreground">Admin Team</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="border-border/60">
-            <CardContent className="p-6">
-              <Quote className="h-6 w-6 text-primary/40" />
-              <p className="mt-4 text-pretty text-base leading-relaxed">"Survived the biggest DDoS attack we've ever had. Zero downtime."</p>
-              <div className="mt-6 flex items-center gap-3">
-                <Avatar className="h-9 w-9"><AvatarFallback>MR</AvatarFallback></Avatar>
-                <div>
-                  <p className="text-sm font-semibold">Mike R.</p>
-                  <p className="text-xs text-muted-foreground">Survival Server</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+      <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+        
+        <h2 className="mx-auto max-w-3xl text-balance text-center text-3xl font-semibold tracking-tight sm:text-4xl">Loved by people who care about quality</h2>
+        <figure className="mt-12 rounded-3xl border bg-card p-8 sm:p-12">
+          <Quote className="h-10 w-10 text-primary/40" />
+          <blockquote className="mt-6 text-pretty text-2xl font-medium leading-relaxed sm:text-3xl">"Switching to tests was the best decision for our community server. The performance is incredible, and support is always on point!"</blockquote>
+          <figcaption className="mt-8 flex items-center gap-4">
+            <Avatar><AvatarFallback>AP</AvatarFallback></Avatar>
+            <div>
+              <p className="font-semibold">Alex P.</p>
+              <p className="text-sm text-muted-foreground">Community Admin</p>
+            </div>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -192,38 +160,38 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl text-center space-y-4">
           
           <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Pricing built for every stage</h2>
-          
+          <p className="mx-auto max-w-2xl text-pretty text-muted-foreground">Choose from our flexible hosting plans, designed for every type of Minecraft player and community.</p>
         </div>
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           <Card className="relative ">
             
             <CardHeader>
-              <CardTitle className="text-xl">Starter</CardTitle>
+              <CardTitle className="text-xl">Beginner's Realm</CardTitle>
               <CardDescription></CardDescription>
               <div className="mt-4 flex items-baseline gap-1">
-                <span className="text-4xl font-semibold tracking-tight">0</span>
-                <span className="text-sm text-muted-foreground">/month</span>
+                <span className="text-4xl font-semibold tracking-tight">$5.99</span>
+                <span className="text-sm text-muted-foreground">month</span>
               </div>
             </CardHeader>
             <CardContent>
               <Separator className="mb-6" />
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />2GB RAM</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />20 Player Slots</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />1 World</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Basic Support</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />10 Player Slots</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Basic DDoS Protection</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Instant Setup</li>
               </ul>
-              <Button asChild variant="outline" className="mt-6 w-full"><Link href="#">Choose plan</Link></Button>
+              <Button asChild variant="outline" className="mt-6 w-full"><Link href="/pricingbeginner">Choose Plan</Link></Button>
             </CardContent>
           </Card>
           <Card className="relative ring-2 ring-primary shadow-xl shadow-primary/10 scale-[1.02]">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2"><Badge>Most popular</Badge></div>
             <CardHeader>
-              <CardTitle className="text-xl">Growth</CardTitle>
+              <CardTitle className="text-xl">Explorer's Haven</CardTitle>
               <CardDescription></CardDescription>
               <div className="mt-4 flex items-baseline gap-1">
-                <span className="text-4xl font-semibold tracking-tight">9.99</span>
-                <span className="text-sm text-muted-foreground">/month</span>
+                <span className="text-4xl font-semibold tracking-tight">$12.99</span>
+                <span className="text-sm text-muted-foreground">month</span>
               </div>
             </CardHeader>
             <CardContent>
@@ -231,33 +199,34 @@ export default function HomePage() {
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />6GB RAM</li>
                 <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />50 Player Slots</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />5 Worlds</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Priority Support</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Advanced DDoS Protection</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Full Mod Support</li>
                 <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Daily Backups</li>
               </ul>
-              <Button asChild variant="default" className="mt-6 w-full"><Link href="#">Choose plan</Link></Button>
+              <Button asChild variant="default" className="mt-6 w-full"><Link href="/pricingexplorer">Choose Plan</Link></Button>
             </CardContent>
           </Card>
           <Card className="relative ">
             
             <CardHeader>
-              <CardTitle className="text-xl">Premium</CardTitle>
+              <CardTitle className="text-xl">Legendary World</CardTitle>
               <CardDescription></CardDescription>
               <div className="mt-4 flex items-baseline gap-1">
-                <span className="text-4xl font-semibold tracking-tight">24.99</span>
-                <span className="text-sm text-muted-foreground">/month</span>
+                <span className="text-4xl font-semibold tracking-tight">$24.99</span>
+                <span className="text-sm text-muted-foreground">month</span>
               </div>
             </CardHeader>
             <CardContent>
               <Separator className="mb-6" />
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />16GB RAM</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Unlimited Slots</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Unlimited Worlds</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />24/7 Support</li>
-                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Custom JARs</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Unlimited Player Slots</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Enterprise DDoS Protection</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Dedicated IP Address</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Priority Support</li>
+                <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 text-primary" />Automated Modpack Installs</li>
               </ul>
-              <Button asChild variant="outline" className="mt-6 w-full"><Link href="#">Choose plan</Link></Button>
+              <Button asChild variant="outline" className="mt-6 w-full"><Link href="/pricinglegendary">Choose Plan</Link></Button>
             </CardContent>
           </Card>
         </div>
@@ -265,12 +234,10 @@ export default function HomePage() {
     </section>
 
 <section className="relative w-full ">
-      <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-16 sm:px-6 md:py-20 lg:grid-cols-2 lg:px-8">
-        <div className="space-y-3">
-          <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Ready when you are</h2>
-          <p className="text-pretty text-muted-foreground">Start now and feel the difference within minutes.</p>
-        </div>
-        <div className="flex flex-wrap gap-3 lg:justify-end">
+      <div className="mx-auto max-w-5xl px-4 py-20 text-center sm:px-6 md:py-24 lg:px-8">
+        <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Ready when you are</h2>
+        <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground">Join thousands of satisfied players and elevate your Minecraft experience today.</p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Button asChild size="lg"><Link href="#">Get started</Link></Button>
           
         </div>

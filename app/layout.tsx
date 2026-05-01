@@ -4,11 +4,11 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
 export const metadata: Metadata = {
-  title: "tests — Blazing Fast Minecraft Server Hosting",
-  description: "Launch your Minecraft server in under 60 seconds with enterprise-grade hardware, 24/7 support, and one-click modpack installs. Perfect for survival, Skyblock, or custom worlds.",
+  title: "tests — Unleash Your Minecraft World. Powerful, Reliable, Lag-Free Hosting.",
+  description: "tests provides lightning-fast, secure, and fully customizable Minecraft server hosting. From vanilla survival to modded adventures, we offer the performance and support you need to build your ultimate gaming experience. Get started in minutes and enjoy unparalleled uptime and control.",
   openGraph: {
-    title: "tests — Blazing Fast Minecraft Server Hosting",
-    description: "Launch your Minecraft server in under 60 seconds with enterprise-grade hardware, 24/7 support, and one-click modpack installs. Perfect for survival, Skyblock, or custom worlds.",
+    title: "tests — Unleash Your Minecraft World. Powerful, Reliable, Lag-Free Hosting.",
+    description: "tests provides lightning-fast, secure, and fully customizable Minecraft server hosting. From vanilla survival to modded adventures, we offer the performance and support you need to build your ultimate gaming experience. Get started in minutes and enjoy unparalleled uptime and control.",
     siteName: "tests",
     type: "website",
   },

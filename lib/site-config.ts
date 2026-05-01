@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 
 export const siteConfig = {
   "name": "tests",
-  "tagline": "Blazing Fast Minecraft Server Hosting",
-  "description": "Launch your Minecraft server in under 60 seconds with enterprise-grade hardware, 24/7 support, and one-click modpack installs. Perfect for survival, Skyblock, or custom worlds.",
-  "audience": "Minecraft players, server admins, content creators, and gaming communities",
+  "tagline": "Unleash Your Minecraft World. Powerful, Reliable, Lag-Free Hosting.",
+  "description": "tests provides lightning-fast, secure, and fully customizable Minecraft server hosting. From vanilla survival to modded adventures, we offer the performance and support you need to build your ultimate gaming experience. Get started in minutes and enjoy unparalleled uptime and control.",
+  "audience": "Minecraft players, server administrators, gaming communities, modpack enthusiasts, content creators.",
   "category": null,
   "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrL9R7CqLTLSLcjtegv3iIT1fGQGhDOovNjH50vmXcKg&s=10",
   "logoInitials": "T",
@@ -22,39 +22,48 @@ export const siteConfig = {
       "href": "/pricing"
     },
     {
-      "label": "Dashboard",
-      "href": "/dashboard"
-    },
-    {
       "label": "Support",
       "href": "/support"
+    },
+    {
+      "label": "Login",
+      "href": "/login"
+    },
+    {
+      "label": "Dashboard",
+      "href": "/dashboard"
     }
   ],
   "primaryCta": {
-    "label": "Get Started Free",
-    "href": "/dashboard"
-  },
-  "secondaryCta": {
-    "label": "View Plans",
+    "label": "Start Your Server",
     "href": "/pricing"
   },
+  "secondaryCta": {
+    "label": "Explore Features",
+    "href": "/features"
+  },
   "footerCta": {
-    "label": "Start Your Server",
-    "href": "/dashboard"
+    "label": "Ready to Build? Get Started Today!",
+    "href": "/pricing"
   },
   "socialLinks": [
     {
-      "label": "Discord",
-      "href": "https://discord.gg/minecraftservers"
+      "label": "Twitter",
+      "href": "#"
     },
     {
-      "label": "Twitter",
-      "href": "https://twitter.com/tests_servers"
+      "label": "Discord",
+      "href": "#"
+    },
+    {
+      "label": "YouTube",
+      "href": "#"
     }
   ],
   "contact": {
     "email": "support@tests.com",
-    "phone": "+1 (555) 123-4567"
+    "phone": "+1 (800) 555-0199",
+    "address": "123 Crafting Table Lane, Blockville, MC 12345"
   },
   "themePreset": "saas",
   "integrations": [
@@ -62,7 +71,7 @@ export const siteConfig = {
       "kind": "database",
       "name": "Turso",
       "provider": "turso",
-      "reason": "Store user accounts, server configurations, billing info, and usage metrics",
+      "reason": "User accounts, server configurations, order management, billing data.",
       "envVars": [
         "TURSO_DATABASE_URL",
         "TURSO_AUTH_TOKEN"

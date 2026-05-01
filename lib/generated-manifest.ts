@@ -4,10 +4,10 @@
 export const generatedManifest = {
   "brief": {
     "projectName": "tests",
-    "tagline": "Blazing Fast Minecraft Server Hosting",
-    "description": "Launch your Minecraft server in under 60 seconds with enterprise-grade hardware, 24/7 support, and one-click modpack installs. Perfect for survival, Skyblock, or custom worlds.",
-    "audience": "Minecraft players, server admins, content creators, and gaming communities",
-    "voice": "Gamer-friendly, technical, enthusiastic",
+    "tagline": "Unleash Your Minecraft World. Powerful, Reliable, Lag-Free Hosting.",
+    "description": "tests provides lightning-fast, secure, and fully customizable Minecraft server hosting. From vanilla survival to modded adventures, we offer the performance and support you need to build your ultimate gaming experience. Get started in minutes and enjoy unparalleled uptime and control.",
+    "audience": "Minecraft players, server administrators, gaming communities, modpack enthusiasts, content creators.",
+    "voice": "Empowering, technical, friendly, reliable, high-performance.",
     "themePreset": "saas",
     "navLinks": [
       {
@@ -23,40 +23,49 @@ export const generatedManifest = {
         "href": "/pricing"
       },
       {
-        "label": "Dashboard",
-        "href": "/dashboard"
-      },
-      {
         "label": "Support",
         "href": "/support"
+      },
+      {
+        "label": "Login",
+        "href": "/login"
+      },
+      {
+        "label": "Dashboard",
+        "href": "/dashboard"
       }
     ],
     "primaryCta": {
-      "label": "Get Started Free",
-      "href": "/dashboard"
-    },
-    "secondaryCta": {
-      "label": "View Plans",
+      "label": "Start Your Server",
       "href": "/pricing"
     },
+    "secondaryCta": {
+      "label": "Explore Features",
+      "href": "/features"
+    },
     "footerCta": {
-      "label": "Start Your Server",
-      "href": "/dashboard"
+      "label": "Ready to Build? Get Started Today!",
+      "href": "/pricing"
     },
     "contact": {
       "email": "support@tests.com",
-      "phone": "+1 (555) 123-4567"
+      "phone": "+1 (800) 555-0199",
+      "address": "123 Crafting Table Lane, Blockville, MC 12345"
     },
     "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrL9R7CqLTLSLcjtegv3iIT1fGQGhDOovNjH50vmXcKg&s=10",
     "logoInitials": "T",
     "socialLinks": [
       {
-        "label": "Discord",
-        "href": "https://discord.gg/minecraftservers"
+        "label": "Twitter",
+        "href": "#"
       },
       {
-        "label": "Twitter",
-        "href": "https://twitter.com/tests_servers"
+        "label": "Discord",
+        "href": "#"
+      },
+      {
+        "label": "YouTube",
+        "href": "#"
       }
     ]
   },
@@ -112,55 +121,49 @@ export const generatedManifest = {
   "pages": [
     {
       "path": "/",
-      "title": "tests - Minecraft Server Hosting",
-      "metaTitle": "tests | Fastest Minecraft Server Hosting - Launch in 60 Seconds",
-      "metaDescription": "Deploy Minecraft servers instantly with DDoS protection, unlimited slots, and mod support. Free trial available.",
+      "title": "Home - tests Minecraft Hosting",
+      "metaTitle": "tests - High-Performance Minecraft Server Hosting",
+      "metaDescription": "Experience lag-free, powerful, and customizable Minecraft server hosting. Instant setup, full mod support, and 24/7 expert support.",
       "sections": [
         {
           "kind": "hero",
           "variant": "saas-dashboard",
-          "items": [
-            {
-              "title": "1-Click Setup",
-              "description": "Java, Bedrock, Forge, Fabric, Spigot",
-              "highlighted": false
-            },
-            {
-              "title": "99.9% Uptime",
-              "description": "Enterprise-grade infrastructure",
-              "highlighted": false
-            },
-            {
-              "title": "Free Migration",
-              "description": "Transfer your world free",
-              "highlighted": false
-            }
-          ]
+          "description": "Experience unparalleled speed, stability, and control. Host your dream Minecraft world with tests, where lag is a myth and possibilities are endless.",
+          "primaryCta": {
+            "label": "Start Your Server",
+            "href": "/pricing"
+          },
+          "secondaryCta": {
+            "label": "View Demo Dashboard",
+            "href": "#dashboard-demo"
+          }
         },
         {
-          "kind": "stats",
+          "kind": "logos",
           "variant": "row",
           "items": [
             {
-              "label": "Servers Hosted",
-              "value": "10,000",
-              "suffix": "+",
+              "label": "Forge",
               "highlighted": false
             },
             {
-              "label": "Uptime %",
-              "value": "99.9",
-              "suffix": "%",
+              "label": "Fabric",
               "highlighted": false
             },
             {
-              "label": "Global Locations",
-              "value": "50",
+              "label": "PaperMC",
               "highlighted": false
             },
             {
-              "label": "Expert Support",
-              "value": "24/7",
+              "label": "Spigot",
+              "highlighted": false
+            },
+            {
+              "label": "Bukkit",
+              "highlighted": false
+            },
+            {
+              "label": "CurseForge",
               "highlighted": false
             }
           ]
@@ -168,94 +171,99 @@ export const generatedManifest = {
         {
           "kind": "feature-grid",
           "variant": "bento",
+          "description": "From instant setup to advanced mod support, tests provides everything you need for an epic Minecraft journey.",
           "items": [
             {
-              "title": "One-Click Modpacks",
-              "description": "Install SkyFactory, FTB, Tekkit, and 100+ packs instantly",
-              "icon": "package",
+              "title": "Instant Setup",
+              "description": "Get your server online in minutes, not hours. Our automated system handles everything.",
+              "icon": "rocket",
               "highlighted": false
             },
             {
-              "title": "DDoS Protection",
-              "description": "Military-grade shielding keeps your server online",
+              "title": "Blazing Fast Performance",
+              "description": "Powered by NVMe SSDs and high-end CPUs, ensuring zero lag and smooth gameplay.",
+              "icon": "bolt",
+              "highlighted": false
+            },
+            {
+              "title": "Full Mod & Plugin Support",
+              "description": "Easily install Forge, Fabric, Spigot, Paper, Bukkit, and any modpack you desire.",
+              "icon": "puzzle",
+              "highlighted": false
+            },
+            {
+              "title": "DDoS Protection Included",
+              "description": "Stay online and secure with enterprise-grade DDoS mitigation built into every plan.",
               "icon": "shield",
               "highlighted": false
             },
             {
-              "title": "Unlimited Players",
-              "description": "No slot limits - host massive communities",
-              "icon": "users",
+              "title": "24/7 Expert Support",
+              "description": "Our dedicated team is always ready to help, day or night, with any issue.",
+              "icon": "headset",
               "highlighted": false
             },
             {
-              "title": "NVMe Storage",
-              "description": "Lightning-fast world loading and chunk generation",
-              "icon": "hard-drive",
-              "highlighted": false
-            },
-            {
-              "title": "Auto Backups",
-              "description": "Hourly snapshots with one-click restore",
-              "icon": "database",
-              "highlighted": false
-            },
-            {
-              "title": "Live Console",
-              "description": "Real-time server control from your dashboard",
-              "icon": "terminal",
+              "title": "Intuitive Control Panel",
+              "description": "Manage your server, backups, and settings with our user-friendly custom panel.",
+              "icon": "layout-dashboard",
               "highlighted": false
             }
           ]
         },
         {
-          "kind": "logos",
+          "kind": "stats",
           "variant": "row",
           "items": [
             {
-              "label": "Hypixel",
+              "label": "Active Servers",
+              "value": "10,000",
+              "suffix": "+",
               "highlighted": false
             },
             {
-              "label": "Mineplex",
+              "label": "Uptime Guarantee",
+              "value": "99.99",
+              "suffix": "%",
               "highlighted": false
             },
             {
-              "label": "CubeCraft",
+              "label": "Data Transferred Monthly",
+              "value": "500",
+              "suffix": "TB+",
               "highlighted": false
             },
             {
-              "label": "Lifeboat",
-              "highlighted": false
-            },
-            {
-              "label": "Minehut",
+              "label": "Happy Players",
+              "value": "100",
+              "suffix": "k+",
               "highlighted": false
             }
           ]
         },
         {
           "kind": "testimonials",
-          "variant": "grid-cards",
+          "variant": "spotlight",
           "items": [
             {
-              "quote": "Migrated 5 servers and never looked back. The performance is insane.",
-              "author": "Alex K.",
-              "role": "Network Owner",
-              "initials": "AK",
+              "quote": "Switching to tests was the best decision for our community server. The performance is incredible, and support is always on point!",
+              "author": "Alex P.",
+              "role": "Community Admin",
+              "initials": "AP",
               "highlighted": false
             },
             {
-              "quote": "One-click FTB Ultimate setup saved us 3 days of work.",
-              "author": "Sarah L.",
-              "role": "Admin Team",
-              "initials": "SL",
+              "quote": "Finally, a host that understands modpacks! Easy installation and zero lag, even with 100+ mods.",
+              "author": "Sarah K.",
+              "role": "Modpack Developer",
+              "initials": "SK",
               "highlighted": false
             },
             {
-              "quote": "Survived the biggest DDoS attack we've ever had. Zero downtime.",
-              "author": "Mike R.",
-              "role": "Survival Server",
-              "initials": "MR",
+              "quote": "My friends and I have been using tests for months. The server never goes down, and the control panel is super easy to use.",
+              "author": "Jake M.",
+              "role": "Casual Gamer",
+              "initials": "JM",
               "highlighted": false
             }
           ]
@@ -263,277 +271,364 @@ export const generatedManifest = {
         {
           "kind": "pricing",
           "variant": "three-tier",
+          "description": "Choose from our flexible hosting plans, designed for every type of Minecraft player and community.",
           "items": [
             {
-              "title": "Starter",
-              "price": "0",
-              "period": "/month",
+              "title": "Beginner's Realm",
+              "price": "$5.99",
+              "period": "month",
               "features": [
                 "2GB RAM",
-                "20 Player Slots",
-                "1 World",
-                "Basic Support"
+                "10 Player Slots",
+                "Basic DDoS Protection",
+                "Instant Setup"
               ],
+              "cta": {
+                "label": "Choose Plan",
+                "href": "/pricingbeginner"
+              },
               "highlighted": false
             },
             {
-              "title": "Growth",
-              "price": "9.99",
-              "period": "/month",
+              "title": "Explorer's Haven",
+              "price": "$12.99",
+              "period": "month",
               "features": [
                 "6GB RAM",
                 "50 Player Slots",
-                "5 Worlds",
-                "Priority Support",
+                "Advanced DDoS Protection",
+                "Full Mod Support",
                 "Daily Backups"
               ],
+              "cta": {
+                "label": "Choose Plan",
+                "href": "/pricingexplorer"
+              },
               "highlighted": true
             },
             {
-              "title": "Premium",
-              "price": "24.99",
-              "period": "/month",
+              "title": "Legendary World",
+              "price": "$24.99",
+              "period": "month",
               "features": [
                 "16GB RAM",
-                "Unlimited Slots",
-                "Unlimited Worlds",
-                "24/7 Support",
-                "Custom JARs"
+                "Unlimited Player Slots",
+                "Enterprise DDoS Protection",
+                "Dedicated IP Address",
+                "Priority Support",
+                "Automated Modpack Installs"
               ],
+              "cta": {
+                "label": "Choose Plan",
+                "href": "/pricinglegendary"
+              },
               "highlighted": false
             }
           ]
         },
         {
           "kind": "cta",
-          "variant": "split"
+          "variant": "banner",
+          "description": "Join thousands of satisfied players and elevate your Minecraft experience today."
         }
       ]
     },
     {
       "path": "/features",
       "title": "Features - tests Minecraft Hosting",
-      "metaTitle": "All Features | tests Minecraft Server Hosting",
-      "metaDescription": "Explore every feature from one-click modpacks to enterprise DDoS protection.",
+      "metaTitle": "tests Features - Power & Flexibility for Your Server",
+      "metaDescription": "Explore the advanced features of tests Minecraft hosting: high-performance hardware, full mod support, DDoS protection, and intuitive control panel.",
       "sections": [
         {
           "kind": "hero",
-          "variant": "centered"
+          "variant": "split",
+          "description": "Dive deep into the technical advantages that make tests the ultimate choice for your Minecraft hosting needs. Performance, security, and control, all in one place.",
+          "primaryCta": {
+            "label": "See Plans",
+            "href": "/pricing"
+          },
+          "secondaryCta": {
+            "label": "Contact Sales",
+            "href": "/support"
+          }
         },
         {
           "kind": "feature-grid",
           "variant": "alternating",
+          "description": "Every aspect of tests is engineered for speed, reliability, and ease of use.",
           "items": [
             {
-              "title": "Instant Deployment",
-              "description": "Pick your version and launch immediately",
+              "title": "High-Performance Hardware",
+              "description": "Our servers run on the latest AMD Ryzen CPUs and NVMe SSDs, ensuring minimal latency and maximum TPS (Ticks Per Second).",
+              "icon": "cpu",
               "highlighted": false
             },
             {
-              "title": "Live File Manager",
-              "description": "Edit configs, upload plugins, manage worlds",
+              "title": "Advanced Security Suite",
+              "description": "Comprehensive DDoS protection, firewall management, and regular security audits keep your server safe from malicious attacks.",
+              "icon": "shield-check",
               "highlighted": false
             },
             {
-              "title": "Player Management",
-              "description": "Whitelist, bans, permissions from one dashboard",
+              "title": "One-Click Modpack Installers",
+              "description": "Deploy popular modpacks like RLCraft, Valhelsia, or Stoneblock with a single click. No complex setup required.",
+              "icon": "package-plus",
               "highlighted": false
             },
             {
-              "title": "Scheduled Tasks",
-              "description": "Auto-restarts, backups, announcements",
+              "title": "Automated Daily Backups",
+              "description": "Your world data is automatically backed up daily and stored securely, allowing for easy restoration anytime.",
+              "icon": "cloud-backup",
+              "highlighted": false
+            },
+            {
+              "title": "Customizable Control Panel",
+              "description": "Our intuitive panel gives you full control over server settings, console access, file management, and user permissions.",
+              "icon": "settings",
+              "highlighted": false
+            },
+            {
+              "title": "Global Data Centers",
+              "description": "Choose from multiple data center locations worldwide to ensure the lowest ping for you and your players.",
+              "icon": "globe",
               "highlighted": false
             }
           ]
         },
         {
-          "kind": "feature-grid",
-          "variant": "cards",
+          "kind": "process",
+          "variant": "steps",
+          "description": "From choosing your plan to playing with friends, we make getting started effortless.",
           "items": [
             {
-              "title": "Global Edge Network",
-              "description": "50+ locations for lowest latency",
+              "title": "Choose Your Plan",
+              "description": "Select the perfect hosting package based on your server size and needs.",
+              "eyebrow": "Step 01",
               "highlighted": false
             },
             {
-              "title": "Enterprise DDoS",
-              "description": "1Tbps+ mitigation capacity",
+              "title": "Configure Your Server",
+              "description": "Instantly set up your server version, modpack, and initial settings through our control panel.",
+              "eyebrow": "Step 02",
               "highlighted": false
             },
             {
-              "title": "NVMe SSD Storage",
-              "description": "10x faster than traditional hosting",
+              "title": "Start Playing!",
+              "description": "Connect to your new server, invite your friends, and begin your epic Minecraft adventure.",
+              "eyebrow": "Step 03",
               "highlighted": false
             }
           ]
         },
         {
           "kind": "cta",
-          "variant": "banner"
+          "variant": "boxed-card",
+          "description": "Join the tests family and elevate your Minecraft hosting experience today. No compromises, just pure performance."
         }
       ]
     },
     {
       "path": "/pricing",
       "title": "Pricing - tests Minecraft Hosting",
-      "metaTitle": "Pricing Plans | Minecraft Server Hosting from $0",
-      "metaDescription": "Transparent Minecraft hosting plans starting free. Scale as you grow.",
+      "metaTitle": "Minecraft Server Hosting Plans & Pricing | tests",
+      "metaDescription": "Browse flexible and affordable Minecraft server hosting plans. Compare features, RAM, player slots, and choose the perfect package for your world.",
       "sections": [
         {
           "kind": "hero",
-          "variant": "gradient-card"
+          "variant": "centered",
+          "description": "No hidden fees, just powerful Minecraft hosting plans tailored to your needs. Scale up or down anytime.",
+          "primaryCta": {
+            "label": "Compare Features",
+            "href": "/features"
+          }
         },
         {
           "kind": "pricing",
           "variant": "three-tier",
+          "description": "Whether you're starting small or building a massive community, we have a plan for you.",
           "items": [
             {
-              "title": "Starter",
-              "price": "0",
-              "period": "/month",
+              "title": "Beginner's Realm",
+              "price": "$5.99",
+              "period": "month",
               "features": [
                 "2GB RAM",
-                "20 Slots",
-                "1 World",
-                "Basic Support"
+                "10 Player Slots",
+                "Basic DDoS Protection",
+                "Instant Setup"
               ],
+              "cta": {
+                "label": "Choose Plan",
+                "href": "/pricingbeginner"
+              },
               "highlighted": false
             },
             {
-              "title": "Growth",
-              "price": "9.99",
-              "period": "/month",
+              "title": "Explorer's Haven",
+              "price": "$12.99",
+              "period": "month",
               "features": [
                 "6GB RAM",
-                "50 Slots",
-                "5 Worlds",
-                "Priority Support",
+                "50 Player Slots",
+                "Advanced DDoS Protection",
+                "Full Mod Support",
                 "Daily Backups"
               ],
+              "cta": {
+                "label": "Choose Plan",
+                "href": "/pricingexplorer"
+              },
               "highlighted": true
             },
             {
-              "title": "Premium",
-              "price": "24.99",
-              "period": "/month",
+              "title": "Legendary World",
+              "price": "$24.99",
+              "period": "month",
               "features": [
                 "16GB RAM",
-                "Unlimited Slots",
-                "Unlimited Worlds",
-                "24/7 Support",
-                "Custom JARs"
+                "Unlimited Player Slots",
+                "Enterprise DDoS Protection",
+                "Dedicated IP Address",
+                "Priority Support",
+                "Automated Modpack Installs"
               ],
+              "cta": {
+                "label": "Choose Plan",
+                "href": "/pricinglegendary"
+              },
               "highlighted": false
             }
           ]
         },
         {
-          "kind": "comparison",
-          "variant": "table",
+          "kind": "faq",
+          "variant": "accordion",
+          "description": "Got questions? We've got answers about our plans, billing, and upgrades.",
           "items": [
             {
+              "title": "What payment methods do you accept?",
+              "description": "We accept major credit cards (Visa, MasterCard, American Express) and PayPal.",
               "highlighted": false
             },
             {
+              "title": "Can I upgrade or downgrade my plan?",
+              "description": "Yes, you can easily upgrade or downgrade your server plan at any time through our control panel. Your resources will be adjusted immediately.",
               "highlighted": false
             },
             {
+              "title": "Is there a contract or commitment?",
+              "description": "No, all our plans are month-to-month with no long-term contracts. You can cancel anytime.",
               "highlighted": false
             },
             {
+              "title": "Do you offer refunds?",
+              "description": "We offer a 7-day money-back guarantee for new customers. Please review our terms of service for full details.",
+              "highlighted": false
+            },
+            {
+              "title": "Are there any hidden fees?",
+              "description": "Absolutely not. The price you see is the price you pay. All essential features like DDoS protection and backups are included.",
               "highlighted": false
             }
           ]
         },
         {
           "kind": "cta",
-          "variant": "boxed-card"
-        }
-      ]
-    },
-    {
-      "path": "/dashboard",
-      "title": "Dashboard - tests",
-      "metaTitle": "Dashboard | Manage Your Minecraft Servers",
-      "metaDescription": "Control panel for your Minecraft servers, billing, and settings.",
-      "sections": [
-        {
-          "kind": "hero",
-          "variant": "split"
-        },
-        {
-          "kind": "stats",
-          "variant": "card-row",
-          "items": [
-            {
-              "label": "Server Status",
-              "value": "Online",
-              "highlighted": false
-            },
-            {
-              "label": "Players Online",
-              "value": "24",
-              "suffix": "/50",
-              "highlighted": false
-            },
-            {
-              "label": "Avg TPS",
-              "value": "2.4",
-              "highlighted": false
-            },
-            {
-              "label": "Uptime",
-              "value": "99.9",
-              "suffix": "%",
-              "highlighted": false
-            }
-          ]
-        },
-        {
-          "kind": "cta",
-          "variant": "banner"
+          "variant": "banner",
+          "description": "Our support team can help you choose the perfect plan for your Minecraft server."
         }
       ]
     },
     {
       "path": "/support",
-      "title": "Support - tests",
-      "metaTitle": "24/7 Support | Minecraft Server Help",
-      "metaDescription": "Get help with setup, troubleshooting, and optimization.",
+      "title": "Support - tests Minecraft Hosting",
+      "metaTitle": "tests Support - 24/7 Expert Help for Your Minecraft Server",
+      "metaDescription": "Get instant help for your Minecraft server. Browse FAQs, submit a support ticket, or contact our 24/7 expert team for assistance.",
       "sections": [
         {
           "kind": "hero",
-          "variant": "centered"
+          "variant": "centered",
+          "description": "Our expert team is available 24/7 to ensure your Minecraft server runs smoothly. Get answers quickly.",
+          "primaryCta": {
+            "label": "Submit a Ticket",
+            "href": "#"
+          }
         },
         {
           "kind": "faq",
-          "variant": "accordion",
+          "variant": "two-column",
+          "description": "Browse our frequently asked questions to find solutions instantly.",
           "items": [
             {
-              "title": "How long does setup take?",
-              "description": "Servers are live in under 60 seconds after payment.",
+              "title": "How do I connect to my server?",
+              "description": "After purchase, you'll receive your server IP and port in your control panel. Simply paste it into Minecraft's multiplayer menu.",
               "highlighted": false
             },
             {
-              "title": "Can I use custom plugins?",
-              "description": "Yes! Upload any JAR file through the file manager.",
+              "title": "Can I upload my existing world?",
+              "description": "Yes, you can easily upload your existing Minecraft world files via SFTP or our control panel's file manager.",
               "highlighted": false
             },
             {
-              "title": "What happens if my server crashes?",
-              "description": "Auto-restart is enabled by default with 5-second recovery.",
+              "title": "What if my server lags?",
+              "description": "Check your server's resource usage in the control panel. If issues persist, our support team can help diagnose and optimize.",
               "highlighted": false
             },
             {
-              "title": "Do you support Bedrock?",
-              "description": "Both Java and Bedrock editions fully supported.",
+              "title": "Do you support custom JAR files?",
+              "description": "Yes, you can upload and run any custom JAR file, allowing for unique server setups beyond standard versions and modpacks.",
+              "highlighted": false
+            },
+            {
+              "title": "How do I update my server version?",
+              "description": "Our control panel allows for one-click updates to the latest Minecraft versions or specific snapshots.",
+              "highlighted": false
+            },
+            {
+              "title": "What is your average response time?",
+              "description": "Our average response time for support tickets is under 15 minutes, 24/7.",
               "highlighted": false
             }
           ]
         },
         {
           "kind": "contact",
-          "variant": "split-form"
+          "variant": "split-form",
+          "description": "Fill out the form below, and one of our support specialists will get back to you promptly."
+        }
+      ]
+    },
+    {
+      "path": "/login",
+      "title": "Login - tests Minecraft Hosting",
+      "metaTitle": "Login to tests - Manage Your Minecraft Servers",
+      "metaDescription": "Log in to your tests account to manage your Minecraft servers, access billing, and utilize support resources.",
+      "sections": [
+        {
+          "kind": "hero",
+          "variant": "centered",
+          "description": "Log in to manage your servers, view billing, and access support resources.",
+          "primaryCta": {
+            "label": "Sign Up",
+            "href": "/signup"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/dashboard",
+      "title": "Dashboard - tests Minecraft Hosting",
+      "metaTitle": "Your Server Dashboard - tests",
+      "metaDescription": "Access your personal dashboard to manage all your Minecraft servers, monitor performance, and utilize hosting tools.",
+      "sections": [
+        {
+          "kind": "hero",
+          "variant": "centered",
+          "description": "Manage your Minecraft worlds, monitor performance, and access all your hosting tools here.",
+          "primaryCta": {
+            "label": "Launch Control Panel",
+            "href": "#control-panel"
+          }
         }
       ]
     }
@@ -546,7 +641,7 @@ export const generatedManifest = {
       "kind": "database",
       "name": "Turso",
       "provider": "turso",
-      "reason": "Store user accounts, server configurations, billing info, and usage metrics",
+      "reason": "User accounts, server configurations, order management, billing data.",
       "envVars": [
         "TURSO_DATABASE_URL",
         "TURSO_AUTH_TOKEN"
@@ -556,22 +651,22 @@ export const generatedManifest = {
   "requiredEnvVars": [
     {
       "key": "TURSO_DATABASE_URL",
-      "purpose": "Turso — Store user accounts, server configurations, billing info, and usage metrics",
+      "purpose": "Turso — User accounts, server configurations, order management, billing data.",
       "provider": "turso",
       "required": true,
       "integration": "Turso"
     },
     {
       "key": "TURSO_AUTH_TOKEN",
-      "purpose": "Turso — Store user accounts, server configurations, billing info, and usage metrics",
+      "purpose": "Turso — User accounts, server configurations, order management, billing data.",
       "provider": "turso",
       "required": true,
       "integration": "Turso"
     }
   ],
   "unconnectedIntegrations": [
-    "Clerk",
-    "Stripe"
+    "Clerk Auth",
+    "Stripe Payments"
   ]
 } as const
 

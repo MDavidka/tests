@@ -1,15 +1,14 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { type Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "24/7 Support | Minecraft Server Help",
-  description: "Get help with setup, troubleshooting, and optimization.",
+  title: "tests Support - 24/7 Expert Help for Your Minecraft Server",
+  description: "Get instant help for your Minecraft server. Browse FAQs, submit a support ticket, or contact our 24/7 expert team for assistance.",
 }
 
 export default function SupportPage() {
@@ -20,9 +19,9 @@ export default function SupportPage() {
       <div className="mx-auto max-w-4xl px-4 py-24 text-center sm:px-6 md:py-32 lg:px-8">
         
         <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">Ship something people remember.</h1>
-        
+        <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-muted-foreground">Our expert team is available 24/7 to ensure your Minecraft server runs smoothly. Get answers quickly.</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <Button asChild size="lg"><Link href="#">Get started</Link></Button>
+          <Button asChild size="lg"><Link href="#">Submit a Ticket</Link></Button>
           
         </div>
         
@@ -30,30 +29,38 @@ export default function SupportPage() {
     </section>
 
 <section className="relative w-full ">
-      <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 md:py-24 lg:px-8">
-        <div className="text-center space-y-4">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 md:py-24 lg:grid-cols-3 lg:px-8">
+        <div className="space-y-4">
           
           <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Frequently asked</h2>
-          
+          <p className="text-pretty text-muted-foreground">Browse our frequently asked questions to find solutions instantly.</p>
         </div>
-        <Accordion type="single" collapsible className="mt-12 w-full">
-          <AccordionItem value="item-0">
-            <AccordionTrigger className="text-left text-base">How long does setup take?</AccordionTrigger>
-            <AccordionContent className="text-muted-foreground">Servers are live in under 60 seconds after payment.</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="text-left text-base">Can I use custom plugins?</AccordionTrigger>
-            <AccordionContent className="text-muted-foreground">Yes! Upload any JAR file through the file manager.</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger className="text-left text-base">What happens if my server crashes?</AccordionTrigger>
-            <AccordionContent className="text-muted-foreground">Auto-restart is enabled by default with 5-second recovery.</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger className="text-left text-base">Do you support Bedrock?</AccordionTrigger>
-            <AccordionContent className="text-muted-foreground">Both Java and Bedrock editions fully supported.</AccordionContent>
-          </AccordionItem>
-        </Accordion>
+        <dl className="lg:col-span-2 divide-y rounded-2xl border bg-card">
+          <div className="px-6 py-5">
+            <dt className="font-semibold">How do I connect to my server?</dt>
+            <dd className="mt-2 text-sm text-muted-foreground">After purchase, you'll receive your server IP and port in your control panel. Simply paste it into Minecraft's multiplayer menu.</dd>
+          </div>
+          <div className="px-6 py-5">
+            <dt className="font-semibold">Can I upload my existing world?</dt>
+            <dd className="mt-2 text-sm text-muted-foreground">Yes, you can easily upload your existing Minecraft world files via SFTP or our control panel's file manager.</dd>
+          </div>
+          <div className="px-6 py-5">
+            <dt className="font-semibold">What if my server lags?</dt>
+            <dd className="mt-2 text-sm text-muted-foreground">Check your server's resource usage in the control panel. If issues persist, our support team can help diagnose and optimize.</dd>
+          </div>
+          <div className="px-6 py-5">
+            <dt className="font-semibold">Do you support custom JAR files?</dt>
+            <dd className="mt-2 text-sm text-muted-foreground">Yes, you can upload and run any custom JAR file, allowing for unique server setups beyond standard versions and modpacks.</dd>
+          </div>
+          <div className="px-6 py-5">
+            <dt className="font-semibold">How do I update my server version?</dt>
+            <dd className="mt-2 text-sm text-muted-foreground">Our control panel allows for one-click updates to the latest Minecraft versions or specific snapshots.</dd>
+          </div>
+          <div className="px-6 py-5">
+            <dt className="font-semibold">What is your average response time?</dt>
+            <dd className="mt-2 text-sm text-muted-foreground">Our average response time for support tickets is under 15 minutes, 24/7.</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -62,7 +69,7 @@ export default function SupportPage() {
         <div className="space-y-5">
           
           <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">Tell us about your project</h2>
-          
+          <p className="text-pretty text-muted-foreground">Fill out the form below, and one of our support specialists will get back to you promptly.</p>
           
         </div>
         <div className="rounded-2xl border bg-card p-6 sm:p-8">
